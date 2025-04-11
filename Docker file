@@ -9,3 +9,7 @@ FROM ubuntu:latest
 # install -y vim nginx installs vim and nginx. The tac y -y answers yes to installation
 # prompts so it doesn't prompt the user during installation.
 RUN apt-get update && apt-get install -y vim nginx
+
+# COPY is another docker instruction to copy files into the docker image.
+# This copies appfile to appfile from the host to the docker image.
+COPY appfile.sh /appfile.sh
