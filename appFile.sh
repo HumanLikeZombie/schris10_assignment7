@@ -7,3 +7,8 @@
 # This command is used start the nginx service. It will initiate the Nginx processes 
 # for web requests.
 service nginx start
+
+# sed is used to modify lines from a specified file parameter.
+# This is where we change the default nginx webpage welcome to Spencer's webpage in the
+# docker instance.
+sed -i "s/Welcome to nginx/Welcome to Spencer's page/" /var/www/html/*.html
