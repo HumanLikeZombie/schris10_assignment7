@@ -1,3 +1,4 @@
+# Copyright Spencer Christiansen - April 10th, 2025
 # This is the where the Dockerfile(DockerFile) will go.
 # FROM is a dockerfile instruction that specifies a base container image.
 # ubuntu:latest is a tag that pulls the most recent version of Ubtuntu.
