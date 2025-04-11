@@ -1,3 +1,4 @@
+# Copyright Spencer Christiansen - April 10th, 2025
 # This is where the appfile(AppFile.sh) will go.
 # This is the first line of a script called a shebang.
 # It's used in script files to set bash as the default shell for command execution.
