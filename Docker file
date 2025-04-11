@@ -13,3 +13,7 @@ RUN apt-get update && apt-get install -y vim nginx
 # COPY is another docker instruction to copy files into the docker image.
 # This copies appfile to appfile from the host to the docker image.
 COPY appfile.sh /appfile.sh
+
+# Once again, we need a run to execute the following commands.
+# chmod +x specifives the appfile has execute permissions and is now an executable.
+RUN chmod +x /appfile.sh && /appfile.sh
