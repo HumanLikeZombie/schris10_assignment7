@@ -17,3 +17,7 @@ COPY appfile.sh /appfile.sh
 # Once again, we need a run to execute the following commands.
 # chmod +x specifives the appfile has execute permissions and is now an executable.
 RUN chmod +x /appfile.sh && /appfile.sh
+
+# This command is so that we can specify we want to listen to the port 80 traffic.
+# We will need this open for connecting to the nginx web page with our AWS IPv4 IP.
+EXPOSE 80
