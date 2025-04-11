@@ -12,3 +12,8 @@ service nginx start
 # This is where we change the default nginx webpage welcome to Spencer's webpage in the
 # docker instance.
 sed -i "s/Welcome to nginx/Welcome to Spencer's page/" /var/www/html/*.html
+
+# sed is used to modify lines from a specified file parameter, same as we did before.
+# This is where we change the occurrences of "nginx" in the same html file with our
+# desired text of (pronounced as EngineX).
+sed -i "s/nginx/nginx (pronounced as EngineX)/g" /var/www/html/*.html
