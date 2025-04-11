@@ -17,3 +17,8 @@ sed -i "s/Welcome to nginx/Welcome to Spencer's page/" /var/www/html/*.html
 # This is where we change the occurrences of "nginx" in the same html file with our
 # desired text of (pronounced as EngineX).
 sed -i "s/nginx/nginx (pronounced as EngineX)/g" /var/www/html/*.html
+
+# Similar to our service start for nginx, this is where we will tell it to restart
+# the service. Restarting nginx means it will shut down the server and power it on
+# once again.
+service nginx restart
