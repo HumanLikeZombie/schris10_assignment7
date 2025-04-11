@@ -2,3 +2,10 @@
 # FROM is a dockerfile instruction that specifies a base container image.
 # ubuntu:latest is a tag that pulls the most recent version of Ubtuntu.
 FROM ubuntu:latest
+
+# RUN is a dockerfile instruction that tells the docker to execute the following commands
+# in an image build.
+# apt-get update updates available package versions.
+# install -y vim nginx installs vim and nginx. The tac y -y answers yes to installation
+# prompts so it doesn't prompt the user during installation.
+RUN apt-get update && apt-get install -y vim nginx
